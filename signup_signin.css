@@ -1,0 +1,114 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("https://images.unsplash.com/photo-1505022610485-0249ba5b3675?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+/*************************Header css***************************/
+#navbarSupportedContent li a {
+    text-transform: uppercase;
+}
+li {
+    padding-right: 20px;
+    list-style-type: none;
+    padding-left: 5px;
+    padding-bottom: 3px;
+}
+li a {
+    color: white;
+}
+.top_nav_bar {
+    padding: 10px;
+}
+.top_right_nav_bar li:not(:last-child){
+    border-right: 1px solid white; 
+}
+
+
+/***********************************CSS pour la page de SIGNUP ****************************/
+
+.signup_header {
+color: white;
+font-size: 2.5rem;
+}
+#femme_radio {
+    position: relative;
+    right: 8%;
+}
+.signup_logo img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+.signup_wrapper {
+    width: 40%;
+    margin: auto;
+    border: 0px solid white;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 8px 8px 0px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 8px 0px 1px rgba(0,0,0,0.75);
+    box-shadow: 8px 8px 0px 1px rgba(0,0,0,0.75);
+}
+.signup_wrapper i {
+    color: yellow;
+    font-size: 1.2rem;
+}
+.signup_wrapper h3 {
+    color: yellow;
+}
+
+/*************************Footer CSS***************************/
+
+.footer_wrapper {
+    position: relative;
+    bottom: -50px;
+    left: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 53vh;
+    margin-top: 50px;
+    background: url('https://cdn.pixabay.com/photo/2018/02/02/04/48/sweater-3124635__340.jpg');
+    padding:  25px 0px;
+}
+.footer_contents {
+    width: 100%;
+    height: 45vh;
+    background-color: black;
+}
+.footer_blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1%;
+    padding-left: 2%;
+}
+.footer_blocks > div {
+    width: 22.5%;
+    height: 29vh;
+}
+.footer_slides {
+    border:4px solid green;
+    width: 96%;
+    height: 10vh;
+    margin: auto;
+}
+.footer_blocks h4 {
+    color: white;
+    margin-left: 44px;
+    margin-bottom: 13px;
+}
+.footer_blocks li a {
+    color: teal;
+}
+.footer_blocks li  {
+    color: yellowgreen;
+}
+.footer_blocks li a:hover {
+    color: blue;
+}

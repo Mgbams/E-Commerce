@@ -1,0 +1,521 @@
+body {
+    background-color: white;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+* {
+    box-sizing: border-box;
+}
+
+/*************************Header css***************************/
+#navbarSupportedContent li a {
+    text-transform: uppercase;
+}
+ li {
+    padding-right: 20px;
+    list-style-type: none;
+    padding-left: 5px;
+    padding-bottom: 3px;
+}
+ li a {
+    color: white;
+}
+.top_nav_bar {
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+}
+.top_right_nav_bar li:not(:last-child){
+    border-right: 1px solid white; 
+}
+
+/*************************Footer CSS***************************/
+footer {
+    margin-top: 40px;
+    width: 100%;
+}
+.footer_wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    height: 53vh;
+    background: url('https://cdn.pixabay.com/photo/2018/02/02/04/48/sweater-3124635__340.jpg');
+    padding: 25px 0px;
+}
+.footer_contents {
+    width: 100%;
+    height: 45vh;
+    background-color: black;
+}
+.footer_blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1%;
+    padding-left: 2%;
+}
+.footer_blocks > div {
+    width: 22.5%;
+    height: 29vh;
+}
+.footer_slides {
+    border:4px solid green;
+    width: 96%;
+    height: 10vh;
+    margin: auto;
+}
+.footer_blocks h4 {
+    color: white;
+    margin-left: 44px;
+    margin-bottom: 13px;
+}
+.footer_blocks li a {
+    color: teal;
+}
+.footer_blocks li  {
+    color: yellowgreen;
+}
+.footer_blocks li a:hover {
+    color: blue;
+}
+
+/******************************Css du homePage***************************************/
+.home_wrapper {
+    width: 90%;
+    margin: auto;
+}
+.home_wrapper #carouselExampleCaptions {
+    width: 100%;
+}
+.carousel img {
+    width: 100%;
+    height: 90vh;
+    display: block;
+}
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 22px;
+}
+.intro >div {
+    width: 31%;
+}
+.fa_intro {
+    font-size: 4.5rem;
+    color: rgba(0, 0, 0, 0.253);
+    position: relative;
+    top: 30%;
+    left: 30%;
+    width: 80px;
+}
+.intro .card-title, .card-text{
+    position: relative;
+    bottom: 60%;
+}
+.latest_products {
+    color: rgba(0, 128, 0, 0.767);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    font-weight: 500;
+    background-color: white;
+    padding: 2px;
+    border: 5px outset rgba(0, 0, 0, 0.37);
+    margin-top: 20px;
+}
+.homepage_products_lists{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.homepage_products_lists img {
+    height: 15rem;
+    width: 100%;
+}
+.homepage_products_lists ul {
+   position: relative;
+   bottom: 28px;
+}
+.homepage_products_lists .card {
+    width: 18.5rem; 
+    height:26.5rem;
+}
+
+.fa-cart-plus_homepage {
+    color: white;
+    margin-right: 6px;
+    font-size: 1.4rem;
+}
+.homepage_add {
+    padding: 8px;
+    border-radius: 5%;
+    color: white;
+}
+.homepage_product_details {
+    border: 1px solid black;
+    padding: 6px;
+    border-radius: 5%;
+    color: black;
+}
+.homepage_products{
+    display: flex;
+    flex-direction: column;
+}
+
+/************************CSS POUR LE PAGE SHOP*****************************/
+.shop_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.shop_wrapper > div:nth-child(odd){
+    width: 20%;
+}
+.shop_wrapper > div:nth-child(even){
+    width: 78%;
+}
+.shop_wrapper > div:not(:last-child) {
+    margin-bottom: 40px;
+}
+.shop_wrapper li a {
+    color: rgba(0, 0, 255, 0.808);
+}
+.shop_description, .shop_plaisir {
+    height: 7rem;
+}
+.shop_products_lists{
+    position: relative;
+    bottom: 11rem;
+}
+.shop_page_products_lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.shop_page_products_lists img {
+    width: 100%;
+    height: 13rem;
+}
+.shop_plaisir, .shop_description {
+    color: white;
+    background-color: teal;
+    text-align: center;
+    word-spacing: 2px;
+    border-top-right-radius: 40%;
+   border-top-left-radius: 40%;
+}
+
+/*************************CSS pour la page d'admin******************************/
+
+.admin_side_nav aside {
+    width: 295px;
+    position: fixed;
+    top: 10px;
+    bottom: 0px;
+    left: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 40px; 
+}
+.admin_side_nav ul{
+   margin-left: -43px;
+   padding-top: 25px;
+}
+.admin_side_nav ul li i{
+    margin-right: 12px;
+ 
+ }
+
+/*************************CSS pour la page d'add product_category.php******************************/
+.insert_product_category .card {
+    width: 50vw;
+    margin-left: 22%;
+    margin-top: 20%;
+    padding-bottom: 8px;
+}
+.insert_product_category input, .insert_product_category textarea {
+    width: 25rem;  
+}
+.insert_product_category textarea {
+    margin-left: 7rem;
+}
+.insert_product_category input[type="text"]{
+    margin-left: 11.3rem;
+}
+.insert_product_category input[type="submit"]{
+    margin-left: 15.3rem;
+}
+.insert_product_category label {
+    font-size: 1.4rem;
+    margin-left: 15px;
+}
+
+/*************************CSS pour la page d'insert product.php******************************/
+.insert_product .card {
+    width: 60vw;
+    margin-left: 12%;
+    margin-top: 17%;
+}
+.insert_product input, .insert_product textarea {
+    width: 25rem;
+}
+.insert_product label {
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+.insert_product textarea {
+    margin-left: 2rem;
+}
+.insert_product input[type="submit"]{
+    margin-left: 15.3rem;
+}
+ .insert_product input[type="file"] {
+    margin-left: 4rem;
+}
+.insert_product input[type="number"] {
+    margin-left: 5.99rem;  
+}
+.insert_product .first_input {
+    margin-left: 5.38rem;
+}
+.insert_product .second_input {
+    margin-left: 2.7rem;
+}
+.insert_product .third_input {
+    margin-left: 8.9rem;
+}
+.insert_product .keyword_input {
+    margin-left: 9.6rem;
+}
+
+/*********************************CSS du page de Category.php***********************************************/
+.category_adds .card {
+    margin-left: 38%;
+    margin-top: 12%;
+    width: 45%;
+}
+.upload_category {
+    width: 66%;
+    margin-left: 8rem;
+}
+#category_desc{
+    margin-left: 2.7rem;
+    width: 25rem;
+}
+.category_adds #category_title {
+    margin-left: 5.7rem;
+    width: 25rem;
+}
+
+/**********************CSS DU PAGE DETAILS********************************/
+
+.details_image_gallery {
+    width: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 19.3rem;
+}
+.details_image_gallery img {
+    width: 100px;
+    height: 150px;
+}
+.full_product_details { 
+    margin-left: 22%; 
+    margin-top: -17%;
+}
+#product_suggestions {
+    width:78%; 
+    margin-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#product_suggestions > div {
+    width: 22%;
+    height: 12rem;
+}
+#product_suggestions .suggested_products {
+    border: 0px groove gray;
+    text-align: start;
+    padding-left: 5%;
+    padding-top: 3%;
+    background-color: teal;
+    color: yellowgreen;
+}
+#product_suggestions img {
+   width: 100%;
+}
+
+.full_product_details h5 {
+    color: white;
+    background-color: teal;
+    width: 25%;
+    border: 0px solid white;
+    border-radius: 5%;
+    padding: 5px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/****Contact Page********************************/
+.contact_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;  
+}
+.contact_side_wrapper {
+    display: flex;
+    flex-direction: column; 
+    width: 22%;   
+}
+.contact_side_wrapper > div {
+    margin-bottom: 30px;
+    width: 100%;
+}
+.contact_side_wrapper li a {
+    color: blue;
+    text-transform: uppercase;
+}
+.nous_contact {
+    width: 75%;
+    background: url('https://cdn.pixabay.com/photo/2017/11/12/15/57/people-2942861__340.jpg');
+    background-size: cover;
+    background-position: fixed;
+    padding: 20px 0px;
+}
+.contact_form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.contact_form .form_left {
+    width: 10%;
+    margin-top: 180px;
+    margin-left: 15px;
+}
+.contact_form .form_left > div {
+    margin-bottom: 30px;
+}
+.contact_form .form_left i {
+    font-size: 1.7rem;
+    color: white;
+}
+.contact_form .form_middle {
+    width: 54%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 0px solid white;
+}
+.contact_form .form_right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.contact_form .form_right > div:not(:last-child) {
+ margin-bottom: 15px;
+}
+.contact_formuilare {
+    width: 80%;
+    margin: auto;
+    padding: 30px 0px;
+}
+.form_right_bottom {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2px;
+    background-color: teal;
+    border-top-right-radius: 10px;
+}
+.form_right_bottom .flexicons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.flexicons {
+    font-size: 1.7rem;
+    color: white;
+}
+.flexicons > div {
+    margin-bottom: 40px;
+}
+.flexicons .envelope {
+    margin-top: 113px;
+}
+.contact_address_contents  {
+    padding-top: 10px;
+}
+.contact_address_contents p:not(:first-child) {
+    line-height: 12px;
+}
+.contact_address_contents > div {
+    margin-bottom: 30px;
+}
+.form_right_top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.87);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    padding: 8px 0px;
+}
+.support .orange {
+    padding: 10px 5px;
+    background-color: palevioletred;
+    border-bottom-right-radius: 10px;
+}
+.contact_address_contents > div > p:first-child{
+    color: white;
+}
+
+/****************************CART CSS STYLE*****************************/
+
+.cart_wrapper {
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cart_wrapper .cart_left {
+    width: 64%;
+    border: 2px solid green;
+}
+.cart_wrapper .cart_right {
+    width: 32%;
+    border: 2px solid yellow;
+}
+.cart_wrapper .cart_right .card {
+    color: white;
+    background-color: black;
+}
+.cart_wrapper .cart_right .card button {
+    width: 70%;
+    margin-left: 15%;
+}
+.cart_button_orange {
+    background-color: orange;
+}
+.cart_wrapper .cart_right .card p {
+    width: 100%;
+}
+.cart_right .card {
+    width: 100%; 
+}
+
+
+
+
+
